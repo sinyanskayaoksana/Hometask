@@ -1,0 +1,393 @@
+body {
+	font-family: Helvetica;
+	color: #0844a4;
+	font-weight: bold;
+	
+}
+
+/* First block */
+
+.first_block {
+	
+	width: 100%;
+	height: 100vh;
+	background-image: url(img/desk2.jpg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+.overlay{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	background-color: rgba(230, 240, 238, .5);
+}
+
+.title{
+	display: flex;
+	flex-direction: column;	
+	align-content: space-around;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	min-height: 50%;
+	min-width: 70%;
+	border: 3px solid #0844a4;
+}
+
+.first_button {
+	background-color: blue;
+	border: 1px solid black;
+	border-radius: 4px;
+	text-decoration: underline;
+	text-align: center;
+	height: 68px;
+	width: 158px;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 68px;
+}
+
+.first_button a {
+	color: white;
+}
+
+/*  Menu */
+
+.menu {
+	width: 100%;
+	height: auto;
+}
+
+.menu ul{
+		display: flex;
+		list-style-type: none;
+		flex-direction: row;
+		justify-content: flex-end;
+		
+		padding: 0;
+		margin: 0;
+}
+
+.menu a{
+		color: #0844a4;
+		padding: 10px 20px;
+		display: block;
+		text-decoration: none;
+		text-align: center;
+		font-weight: bold;
+}
+
+.line{
+		color: #a8a7a2;
+		padding: 10px 20px;
+		display: block;
+		text-decoration: none;
+		text-align: center;
+		font-weight: bold;
+	
+}
+
+h1 {
+	font-size: 5em;
+}
+
+h2 {
+	font-size: 2.3em;
+}
+
+h1,h2, h4 {
+	text-align: center;
+}
+
+/* About */
+
+.photo {
+	grid-area: photo;
+	place-self: center;
+}
+
+.information {
+	grid-area: information;
+	align-self: center;
+}
+
+.strenghts {
+	grid-area: strenghts;
+}
+
+.goals {
+	grid-area: goals;
+}
+
+.dreams {
+	grid-area: dreams;
+}
+
+.wrapper_about {
+	width: 100%;
+	min-height: 100vh;
+}
+
+.block_about {
+		display: grid;
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-areas: "photo  information information information"
+							 "photo  strenghts goals dreams ";
+		grid-column-gap: 20px;
+		grid-row-gap: 20px;
+}
+
+.title1 {
+	display: flex;
+	justify-content: space-around;
+
+}
+
+.title2 {
+	width: 55%;
+}
+
+/* Link To top */
+
+.to_top {
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 50px;
+}	
+
+.to_top a {
+	text-decoration: none;
+	color: #0844a4;
+}
+
+p {			
+	text-indent: 30px;
+	text-align: justify;
+	line-height: 1.3;
+	color: #606060;
+	padding: 5px 15px;
+	font-weight: normal;
+	line-height: 1.5;
+}
+
+/* Experience */
+
+.wrapper_experience {
+  	min-height: 100vh;
+	width: 100%;
+}
+
+.block_experience {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	
+}
+
+ .description {
+ 	border: 1px solid #606060;
+ 	justify-self: center;
+ 	width: 70%;
+ 	min-height: 30%;
+ 	padding: 15px;
+}
+
+.diagram_CSS3 {
+	background-color: blue;
+}
+
+.diagram_HTML5 {
+	background-color: red;
+}
+
+.diagram_PHP {
+	background-color: yellow ;
+}
+
+.diagram_JS {
+	background-color: green;
+}
+
+.diagram_container {
+	display: flex;
+	justify-content: center;
+	min-height: 85%;
+}
+
+ .diagram {
+ 	width: 250px;
+ 	height: 250px;
+ 	background: radial-gradient(white 30%, transparent 31%), 
+ 				conic-gradient(blue 0% 40%, red 40% 80%, yellow 80% 82%, green 82% 100%); 
+ 				border-radius: 50%; 
+ 	color: white;
+}
+
+ .diagram_box {
+ 	display: flex;
+ 	flex-flow: row nowrap;
+ 	justify-content: center;
+ 	margin-top: 20px;
+}
+
+.diagram_box div {
+	border: 2px solid black;
+ 	border-radius: 15px;
+ 	color: black;
+ 	text-align: center;
+ 	font-weight: bold;
+ 	font-size: 0.8;
+ 	width: 60px;
+ 	height: 30px;
+ 	line-height: 30px;
+ 	margin: 0 30px;
+}
+
+/* Interests */
+
+.picture1 {
+	grid-area: pic1;
+}
+
+.picture2 {
+	grid-area: pic2;
+}
+
+.interest1 {
+	grid-area: int1;
+}
+
+.interest2 {
+	grid-area: int2;
+}
+.wrapper_interests {
+	width: 100%;
+	min-height: 100vh;
+}
+.interests {
+	display: grid;
+		margin: 0;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-areas: "pic1 int1 int1 "
+							 "int2 int2 pic2 ";
+		grid-column-gap: 20px;
+		grid-row-gap: 20px;
+		margin: 50px 0;
+		justify-items: center;
+}
+
+.interests p {
+	padding: 30px;
+}
+
+/*Footer*/
+
+.message {
+	grid-area: msg;
+	height: 80px;
+	border: 2px solid #5276d1;
+}
+
+.email {
+	grid-area: email;
+	height: 40px;
+	border: 2px solid #5276d1;
+}
+
+.name {
+	grid-area: name;
+	height: 40px;
+	border: 2px solid #5276d1;
+}
+
+.button2 {
+	grid-area: button;
+	height: 45px;
+	border: 2px solid #606060;
+	border-radius: 2px;
+	background-color: #0844a4;
+	color: white;
+}
+
+.button2:hover {
+	cursor: pointer;
+}
+
+form {
+	width: 45%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px;
+	grid-template-areas: "msg msg msg" 
+						 "email name button";
+
+}
+
+.text {
+	text-align: center;
+	margin: 30px 0;
+}
+
+.form {
+	display: flex;
+	justify-content: center;
+}
+
+.social_icons {
+	width: 100%;
+	height: auto;
+	margin: 50px 0;
+}
+
+.social_icons ul{
+		display: flex;
+		list-style-type: none;
+		flex-direction: row;
+		justify-content: center;
+		
+		padding: 0;
+		margin: 0;
+}
+
+.social_icons li {
+	padding: 0 20px;
+}
+
+.icon{
+	width: 18px;
+
+}
+
+.company {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 0;
+	margin: 0;
+}
+
+h4 {
+	padding: 0 10px;
+	margin: 0;
+}
+
+input::placeholder {
+	font-size: 18px;
+	padding: 0;
+}
+
+input {
+	padding: 0 20px;
+}
+
+
