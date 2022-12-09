@@ -226,10 +226,11 @@ p {
  .diagram {
  	width: 250px;
  	height: 250px;
- 	background: radial-gradient(white 30%, transparent 31%), 
+ 	background: radial-gradient(white 29%, black 5%, transparent 31%), 
  				conic-gradient(blue 0% 40%, red 40% 80%, yellow 80% 82%, green 82% 100%); 
  				border-radius: 50%; 
  	color: white;
+ 	border: 2px solid black;
 }
 
  .diagram_box {
