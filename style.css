@@ -227,7 +227,8 @@ p {
  	width: 250px;
  	height: 250px;
  	background: radial-gradient(white 29%, black 5%, transparent 31%), 
- 				conic-gradient(blue 0% 40%, red 40% 80%, yellow 80% 82%, green 82% 100%); 
+ 				conic-gradient(black 0% 0.2%, blue 0.2% 40%, black 40% 40.2%, red 40.2% 80%, black 80% 80.2%,
+ 							   yellow 80.2% 82%, black 82% 82.2%, green 82.2% 100%); 
  				border-radius: 50%; 
  	color: white;
  	border: 2px solid black;
